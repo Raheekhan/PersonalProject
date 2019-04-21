@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Automation">
+
+    <listeners>
+        <listener class-name="com.listeners.TestNGListener" />
+    </listeners>
+
+    <test name="Testing">
+
+        <parameter name="platformName" value="Mac" />
+        <parameter name="browserName" value="Chrome" />
+        <parameter name="browserVersion" value="Any" />
+
+        <classes>
+            <class name="com.tests.TestClass" />
+        </classes>
+
+    </test>
+
+</suite>
